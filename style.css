@@ -1,0 +1,63 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./imagens/cripto5.webp);
+    background-repeat: no-repeat;
+    font-family: monospace;
+    
+}
+
+.formulario {
+display: flex;
+flex-direction: column;
+align-items: center;
+align-content: flex-end;
+color: whitesmoke;
+justify-content: flex-end;
+font-size: 25px;
+height: 400px;
+
+
+}
+
+
+
+.codificacao{
+    text-align: center;
+    height: 80px;
+  
+
+}
+
+
+.selecionar{
+    height: 30px;
+    border-radius: 5px;
+    border-style: double; 
+    border-style: groove;      
+
+}
+
+.codificar{
+    height: 50px;
+
+}
+
+
+.decodificar{
+    height: 50px;
+}
+
+.msg{
+
+    height: 40px;
+    border-radius: 5px;
+    border-style: groove;   
+}
+
+
+

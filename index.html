@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A mensagem oculta</title>
+
+</head>
+
+<body>
+
+    <div class="formulario">  
+
+    <input type="text" class="msg" placeholder="Digite sua mensagem" required> <br>
+
+        <div class="codificacao">  
+
+            <p> Escolha o tipo de codificação:  </p> <br>
+
+            <select name="select" class="selecionar">
+                <option value="cesar">Cifra de César</option>
+                <option value="base64">Base64</option>
+                
+            </select>
+
+       </div>
+    
+        <form action="" class="escolha">
+
+        <div class="codificar">   
+            <input type="radio" name="webmaster" value="sim"/> Codificar <br/>          
+
+        </div>
+
+        <div class="decodificar">  
+            <input type="radio" name="webmaster" value="sim"/> Decodificar <br/>            
+
+        </div>
+
+        <input type="text" class="msg"  placeholder="Mensagem codificada/decodificada" required>
+        </form>  
+
+    </div>    
+
+   
+
+
+<script src="script.js"></script>
+</body>
+</html>
