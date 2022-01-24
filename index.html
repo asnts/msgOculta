@@ -1,52 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./imagens/cadeado2.png"> 
     <title>A mensagem oculta</title>
 
 </head>
 
 <body>
 
-    <div class="formulario">  
+    <div class="formulario"> 
+        
+        <div class="texto">  
 
-    <input type="text" class="msg" placeholder="Digite sua mensagem" required> <br>
+            <input type="text" class="msg" placeholder="Digite sua mensagem" required> <br>
+
+        </div>
 
         <div class="codificacao">  
 
             <p> Escolha o tipo de codificação:  </p> <br>
 
-            <select name="select" class="selecionar">
-                <option value="cesar">Cifra de César</option>
-                <option value="base64">Base64</option>
+            <select name="select" class="selecionar"> 
+                <option value="cesar" class="cesar">Cifra de César</option> 
+                <option value="base64"  id = "base">Base64</option> 
                 
             </select>
+        
+        
+        </div>  
+
+        <div class="intervalo"> 
+            Escolha o intervalo: <br>
+
+            <input id="intervalo" type="range" value="10" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+
+            <output>10</output> <br>  
 
        </div>
     
         <form action="" class="escolha">
 
-        <div class="codificar">   
-            <input type="radio" name="webmaster" value="sim"/> Codificar <br/>          
+        <div class="code">   
+            <input type="radio" id="codificar" value="code"/> Codificar <br/>          
 
         </div>
 
-        <div class="decodificar">  
-            <input type="radio" name="webmaster" value="sim"/> Decodificar <br/>            
+        <div class="decode">  
+            <input type="radio" id="decodificar" value="decode"/> Decodificar <br/>            
 
         </div>
 
-        <input type="text" class="msg"  placeholder="Mensagem codificada/decodificada" required>
-        </form>  
+        <div class="botao"> 
+
+         <button id="btn" type="submit" onclick="iniciar()">
+            Iniciar </button>
+
+        </div>    
+
+        <div id="resposta"> 
+            <input type="text" class="msg" placeholder="Mensagem codificada/decodificada" required> <br>
+        </div>
+    </form>  
 
     </div>    
-
-   
+  
 
 
 <script src="script.js"></script>
+<script src="base64.js"></script>
+<script src="cifraCesar.js"></script>
+
 </body>
 </html>
