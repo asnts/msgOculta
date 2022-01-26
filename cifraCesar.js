@@ -3,34 +3,22 @@ const texto = document.getElementById("msg");
 const code = document.querySelector("#codificar");
 const decode = document.querySelector("#decodificar");
 const intervalo = document.getElementById('intervalo');
-const resultado = ;
 
 
 
-
-code.addEventListener ('click', function () {
-    botao.value = 'code'
-
-}),
-
-botao.addEventListener('click', function(e) {
-    e.preventDefault();
+function codificarCesar(){
 
 }
 
-function codificar (result, )
 
 
 
 
 
 
-    let mensagem =  document.getElementByid ("msg").value.toUpperCase();
-    let result ="";
-    
-    for (let i =0; i<mensagem.length; i++){
-    
-    }
+function decodificarCesar(){
+
+}
 
 
     // dar volta no dicionario usando chardCodeArt

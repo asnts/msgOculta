@@ -16,7 +16,7 @@
         
         <div class="texto">  
 
-            <input type="text" class="msg" placeholder="Digite sua mensagem" required> <br>
+            <input type="text" class="msg"  id = "msg" placeholder="Digite sua mensagem" required value=""> <br>
 
         </div>
 
@@ -24,9 +24,10 @@
 
             <p> Escolha o tipo de codificação:  </p> <br>
 
-            <select name="select" class="selecionar"> 
-                <option value="cesar" class="cesar">Cifra de César</option> 
-                <option value="base64"  id = "base">Base64</option> 
+            <select id="selecionar" class="select"> 
+                <option value="inicial" id="inicio" >Selecione o tipo </option>
+                <option value="cesar" id="cdc" >Cifra de César</option> 
+                <option value="base64"  id = "base" >Base64</option> 
                 
             </select>
         
@@ -36,7 +37,7 @@
         <div class="intervalo"> 
             Escolha o intervalo: <br>
 
-            <input id="intervalo" type="range" value="10" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+            <input id="incremento" type="range" value="10" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
 
             <output>10</output> <br>  
 
@@ -45,25 +46,25 @@
         <form action="" class="escolha">
 
         <div class="code">   
-            <input type="radio" id="codificar" value="code"/> Codificar <br/>          
+            <input type="radio" name="codecod" id="codificar" value="code"/> Codificar <br/>          
 
         </div>
 
         <div class="decode">  
-            <input type="radio" id="decodificar" value="decode"/> Decodificar <br/>            
+            <input type="radio" name="codecod" id="decodificar" value="decode"/> Decodificar <br/>            
 
         </div>
 
         <div class="botao"> 
 
-         <button id="btn" type="submit" onclick="iniciar()">
-            Iniciar </button>
+         <button id="btn" class= "enviar" type="submit" value="submeter">  Codificar </button>
 
         </div>    
 
         <div id="resposta"> 
-            <input type="text" class="msg" placeholder="Mensagem codificada/decodificada" required> <br>
+            <output class="sair"> <p class="saida"></p></output>
         </div>
+        
     </form>  
 
     </div>    
@@ -71,7 +72,7 @@
 
 
 <script src="script.js"></script>
-<script src="base64.js"></script>
+<script src="base.js"></script>
 <script src="cifraCesar.js"></script>
 
 </body>
